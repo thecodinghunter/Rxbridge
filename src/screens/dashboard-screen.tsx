@@ -32,10 +32,7 @@ const medsIcon = require('@/assets/images/meds_icon.png');
 const reportIcon = require('@/assets/images/report_icon.png');
 const vitalIcon = require('@/assets/images/vital_icon.png');
 const lifestyleIcon = require('@/assets/images/lifestyle_icon.png');
-const familyIcon = require('@/assets/images/family_icon.png');
-const vaccineIcon = require('@/assets/images/vaccine_icon.png');
 const summaryIcon = require('@/assets/images/summary_icon.png');
-const allergyIcon = require('@/assets/images/allergy_icon.png');
 
 // Mock Data
 const SPECIAL_DOCTORS = [
@@ -321,7 +318,6 @@ export function DashboardScreen({
               onPress={onVaccinationRecords}
               activeOpacity={0.8}
             >
-              <Image source={vaccineIcon} style={styles.healthInfoCardIcon} />
               <Text style={[styles.healthInfoCardLabel, { color: theme.textSecondary }]}>Vaccination{'\n'}Records</Text>
             </TouchableOpacity>
 
@@ -339,7 +335,6 @@ export function DashboardScreen({
               onPress={onFamilyAccounts}
               activeOpacity={0.8}
             >
-              <Image source={familyIcon} style={styles.healthInfoCardIcon} />
               <Text style={[styles.healthInfoCardLabel, { color: theme.textSecondary }]}>Family Accounts</Text>
             </TouchableOpacity>
 
@@ -348,9 +343,9 @@ export function DashboardScreen({
               onPress={onAllergies}
               activeOpacity={0.8}
             >
-              <Image source={allergyIcon} style={styles.healthInfoCardIcon} />
               <Text style={[styles.healthInfoCardLabel, { color: theme.textSecondary }]}>Allergies</Text>
             </TouchableOpacity>
+
           </ScrollView>
         </View>
 
